@@ -1,0 +1,81 @@
+{% extends 'baseFront.html' %} {% load static %}
+
+{% block konten %}
+
+<div class="container-fluid p-0 mb-5">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="{% static 'front/img/spyxfamily.png'%}" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="{% static 'front/img/Kny.jfif'%}" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="{% static 'front/img/Violet.jfif'%}" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+<!-- About Start -->
+<div class="container-fluid p-5">
+    <div class="row gx-5">
+        <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 1024px;">
+            <div class="position-relative h-100">
+                <img class="position-absolute w-100 h-100 rounded" src="{% static 'front/img/anya.jfif'%}" style="object-fit: cover;">
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <div class="mb-4">
+                <h5 class="text-primary text-uppercase">Spy x Family</h5>
+                <h1 class="display-3 text-uppercase mb-0"></h1>
+            </div>
+            <h4 class="text-body mb-4">Spy × Family (bahasa Jepang: スパイファミリー) adalah sebuah seri manga web shōnen Jepang yang ditulis dan diilustrasikan oleh Tatsuya Endō (遠藤達哉). Manga ini mulai dimuat pada platform Shōnen Jump+ milik Shueisha sejak tanggal 25 Maret 2019, dan telah dibundel menjadi sepuluh volume tankōbon. Shueisha mulai merilis seri ini dalam bahasa Inggris secara serentak dengan perilisannya di Jepang melalui platform Manga Plus sejak bulan Maret 2019. Adaptasi serial televisi anime oleh Wit Studio dan CloverWorks ditayangkan perdana pada April 2022 di Netflix</p>
+            <div class="rounded bg-dark p-5">
+                <ul class="nav nav-pills justify-content-between mb-3">
+                    <li class="nav-item w-50">
+                        <a class="nav-link text-uppercase text-center w-100 active" data-bs-toggle="pill" href="#pills-1">Plot twist anime spy x family</a>
+                    </li>
+                    <li class="nav-item w-50">
+                            <a class="nav-link text-uppercase text-center w-100" data-bs-toggle="pill" href="#pills-2"></a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="pills-1">
+                        <p class="text-secondary mb-0">Untuk menjaga perdamaian antara negara-negara saingan Westalis dan Ostania, agen Westalis dengan nama sandi "Twilight" ditugaskan untuk memata-matai Donovan Desmond, pemimpin partai politik ekstremis di Ostania. Namun, karena Desmond terkenal tertutup, satu-satunya cara Twilight bisa dekat dengannya adalah dengan mendaftarkan seorang anak di sekolah swasta yang sama dengan putra Desmond dan menyamar sebagai ayah mereka. Untuk mencapai ini, ia menciptakan alias Loid Forger, mengadopsi seorang gadis yatim piatu bernama Anya, dan menikahi seorang wanita bernama Yor Briar, untuk menciptakan citra keluarga yang bahagia. Namun, Yor sebenarnya adalah seorang pembunuh bayaran profesional, baik dia maupun Loid mereka berdua tidak menyadari identitas sebenarnya masing-masing. Keduanya juga tidak menyadari bahwa Anya bisa membaca pikiran, dan mengetahui profesi mereka yang sebenarnya. Terlepas dari faktor-faktor yang tidak diketahui ini, Loid harus belajar memainkan peran ayah dan suami yang sempurna untuk menjalankan misinya.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-2">
+                        <p class="text-secondary mb-0"></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+{% endblock konten %}

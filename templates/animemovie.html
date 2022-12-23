@@ -1,0 +1,38 @@
+{% extends 'baseFront.html' %} {% load static %} {% block konten %}
+
+
+
+<!-- Blog Start -->
+<div class="container-fluid p-5">
+    <div class="row g-5">
+        <!-- Blog list Start -->
+        <div class="col-lg-12">
+            <div class="row g-5">
+                {% for movie in data_movies %}
+                <div class="col-md-4">
+                    <div class="blog-item">
+                        <div class="position-relative overflow-hidden rounded-top">
+                            <img class="img-fluid" src="{{movie.animeImg}}" alt="" style="width: 700px; height: 500px; object-fit: cover;">
+                        </div>
+                        <div class="bg-dark d-flex align-items-center rounded-bottom p-4">
+                            <div class="flex-shrink-0 text-center text-secondary border-end border-secondary pe-3 me-3">
+                               
+                                <span>{{movie.releasedDate}}</span>
+                            </div>
+                            <a class="h5 text-uppercase text-light" href="{% url 'detailanime' movie.animeId %}">{{movie.animeTitle}}</h4></a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                
+            </div>
+        </div>
+        <!-- Blog list End -->
+
+        <!-- Sidebar Start -->
+        <!-- Sidebar End -->
+    </div>
+</div>
+<!-- Blog End -->
+
+{% endblock konten %}

@@ -1,0 +1,29 @@
+{% extends 'baseFront.html' %} {% load static %} {% block konten %}
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid p-5">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <!-- Blog Detail Start -->
+                <div class="mb-5">
+                    <img class="img-fluid rounded mb-5" src="{{data_details.animeImg}}" alt="" style="width: 300px">
+                    <h1 class="text-uppercase mb-4">{{data_details.animeTitle}}</h1>
+                    <p>{{data_details.synopsis}}</p>
+                </div>
+                <!-- Blog Detail End -->
+
+                <!-- Comment List Start -->
+                <!-- Comment List End -->
+
+                <!-- Comment Form Start -->
+                <!-- Comment Form End -->
+            </div>
+
+            <!-- Sidebar Start -->
+            <!-- Sidebar End -->
+        </div>
+    </div>
+    <!-- Blog End -->
+
+{% endblock konten %}
